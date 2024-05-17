@@ -1,0 +1,31 @@
+//變數 與 樣式
+
+//google 字體
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+
+
+$Tourney: "Tourney", sans-serif;
+
+$Tourney-lg: (
+    font-size:72px
+);
+$Tourney-sm: (
+    font-size:48px
+);
+
+$NotoSans: "Noto Sans TC", sans-serif;
+
+$primary:#000000;
+$primary-1: #1E1E1E;
+$primary-2: #3B3B3B;
+$primary-3: #5B5B5B;
+$primary-4: #919191;
+$primary-5: #C1C1C1;
+$primary-6: #E9E9E9;
+$primary-7: #F1F1F1;
+$primary-8: #FAFAFA;
+$primary-9: #FFFFFF;
+
+

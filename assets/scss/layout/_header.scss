@@ -1,0 +1,39 @@
+.navbar{
+  .container{
+    width: 1296px;
+    margin: 0 auto;
+  }
+  h1{
+    margin: 0;
+  }
+  .topMenu{
+      list-style: none;
+      gap: 40px;
+      margin: 0 auto;
+    .page{
+      gap: 10px;
+      padding: 4px 8px;
+    }
+    .nav-item{
+      padding: 4px 8px;
+    }
+  }
+}
+
+@include pad{  //992px
+  .navbar{
+    padding:0 12px;
+    .topMenu{
+      display: none;
+    }
+    .offcanvas{
+      height: 320px;
+    }
+  }
+}
+
+@include iphone{ //576px
+  .navbar{
+    padding: 8px auto;
+  }
+}

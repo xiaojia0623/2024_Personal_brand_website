@@ -1,0 +1,18 @@
+
+
+@mixin pad{  //992以下設定為平板
+    @media(max-width:992px) {
+        @content;
+    }
+}
+@mixin iphone{  //767以下設定為手機
+    @media(max-width:767px) {
+        @content;
+    }
+}
+
+@mixin iphone-sm{  //576以下設定為手機
+    @media(max-width:576px) {
+        @content;
+    }
+}

@@ -1,0 +1,414 @@
+.container{
+    max-width: 1296px;
+}
+
+//首頁banner區塊
+.banner{
+    padding: 0;
+    margin: 0;
+    .banner-content{
+        padding-left: 60px;
+    }
+    .banner-image{
+        .banner-web-img{
+            display: block;
+            object-fit: cover;
+            padding: 0;
+        }
+        .banner-phone-img{
+            display: none;
+        }
+    }
+    
+}
+
+//首頁作品介紹區塊
+.products{
+    .galaxy{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work1-bg.png?raw=true);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .galaxyweb{
+            width: 407px;
+            height: 410px;
+            margin-bottom: -85px;
+            margin-right: 55px;
+        }
+    }
+}
+
+//首頁作品介紹區塊 手機版顯示
+.phoneweb{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work2-lg.png?raw=true);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    .phoneweb-bg{
+        width: 648px;
+        height: 500px;
+        background-color:#0A101380 ;
+        position: relative;
+    }
+}
+
+.medicalweb{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work3-bg.png?raw=true);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 88px 0;
+    .phoneweb-bg{
+        display: flex;
+    }
+    .galaxyweb{
+        width: 407px;
+        height: 410px;
+        margin-right: 55px;
+    }
+}
+
+//首頁服務項目區塊
+.service{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-services-bg.png?raw=true);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 0 120px 0;
+    .title-par{
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        img{
+            width: 100px;
+            height: 6px;
+        }
+    }
+    .service-menu{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        gap: 24px;
+        margin-bottom: 80px;
+        .service-item{
+            background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/service-item-bg.png?raw=true);
+            background-position: center;
+            width: 206px;
+            height: 206px;
+            border-radius: 16px;
+            gap: 24px;
+            padding: 35px 30px;
+            display: block;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            p{
+                color:#ffffff;
+                text-align: center;
+                margin: 0;
+                font-size: 28px;
+            }
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+    .service-ques{
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 33.6px;
+        color: $primary-2;
+        margin-bottom: 40px;
+    }
+    .process{
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 16px 32px;
+        background-color: $primary;
+        border-radius: 5px;
+        margin-bottom: 80px;
+        p{
+            color: $primary-9;
+            margin: 0;
+        }
+        img{
+            margin-left: 8px;
+        }
+    }
+}
+
+//首頁精選文章區塊
+.article{
+    .title-par{
+        margin: 60px auto 80px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 100px;
+            height: 6px;
+        }
+    }
+    .swiper{  //首頁精選文章 輪播區塊
+        width: 1200px;
+        .swiper-wrapper{
+            margin-bottom: 40px;
+        }
+        .swiper-slide{
+            max-width: 416px;
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 416px;
+                height: 234px;
+                object-fit: cover;
+                border-radius: 8px;
+                border: 1px solid $primary-7;
+            }
+            .swiper-title{
+                width: 100%;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+            }
+            .tags{
+                display: flex;
+                justify-content: space-between;
+                p{
+                    border-radius: 16px;
+                    padding: 4px 12px;
+                    gap: 10px;
+                    background: $primary-7;
+                }
+            }
+        }
+    }
+
+}
+
+//手機版 非輪播
+.phone-sw{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 12px;
+    img{
+        border-radius: 8px;
+    }
+    .tags{
+        p{
+            padding: 4px 12px;
+            border-radius: 16px;
+            gap: 10px;
+            background: $primary-7;
+            color: $primary-2;
+            font-weight:400;
+            line-height: 24px;
+        }
+        span{
+            font-weight:400;
+            line-height: 24px;
+            color: $primary-3;
+        }
+    }
+}
+.readmore{
+    align-items: center;
+    background: $primary;
+    text-decoration: none;
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 auto;
+    padding: 8px 16px;
+    max-width: 128px;
+    p{
+        line-height: 24px;
+        font-weight: 700;
+        color: $primary-9;
+        margin: 0 ;
+    }
+}
+
+
+@include pad{
+    //平板 首頁banner區塊
+    .banner{
+        .banner-image{
+            .banner-web-img{
+                display: none;
+            }
+            .banner-phone-img{
+                width: 100%;
+                display: block;
+            }
+        }
+        .banner-content{
+            padding:40px 12px;
+            text-align: center;
+        }
+        .banner-icons{
+            justify-content: center;
+        }
+    }
+
+    //平板 首頁作品介紹區塊
+    .products{
+        .galaxy{
+            padding:  0 12px;
+        }
+    }
+    .phoneweb{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work2-sm.png?raw=true);
+        .phoneweb-bg{
+            background: none;
+            width: 0;
+            height: 0;
+        }
+    }
+    .medicalweb{
+        padding: 0 12px;
+        .galaxyweb{
+            margin: 0;
+        }
+    }
+    .service{
+        height: auto;
+        padding:40px 12px 0 12px;
+       
+        .service-menu{
+            display: flex;
+            flex-direction: column;
+        }
+        .service-item{
+            padding: 86.5px 113px;
+            width: 306px;
+            height: 306px;
+            margin-bottom: 0;
+        }
+    }
+    .article{
+        padding: 60px 12px;
+        .title-par{
+            padding: 0;
+        }
+        .swiper{
+            width: 700px;
+        }
+    }
+    .phone-sw{
+        list-style: none;
+        img{
+            border-radius: 8px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .phone-sw-item{
+            width: 100%;
+        }
+    }
+    
+    
+}
+
+@include iphone{
+    .banner{
+        .banner-image{
+            gap: 0;
+            padding: 0;
+            .banner-web-img{
+                display: none;
+            }
+            .banner-phone-img{
+                display: block;
+            }
+        }
+    }
+    .products{
+        width: 100%;
+        .galaxyweb{
+            margin: 0 0 0 55px;
+            .galaxyweb{
+                width: 295px;
+                height: 297px;
+            }
+        }
+        .box-intro{
+            display: none;
+        }
+    }
+    .phoneweb{
+        .phoneweb-bg{
+            background: none;
+        }
+    }
+    .medicalweb{
+        .galaxyweb{
+            margin: 0;
+        }
+    }
+    .service{
+        .service-menu{
+            padding: 0;
+            .service-item{
+                width: 296px;
+                height: 296px;
+                padding: 80px 90px;
+                img{
+                    width: 80px;
+                    height: 80px;
+                }
+                p{
+                    font-size: 24px;
+                }
+            }
+        }
+        
+    }
+    .article{
+        padding: 80px auto;
+        margin: 0;
+        .title-par{
+            padding: 0;
+            margin: 0 0 40px 0;
+        }
+
+    }
+    .phone-sw{
+        width: 100%;
+    }
+    
+    
+}
+
+@include iphone-sm{
+    .banner{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .products{
+        width: 100%;
+        .box-intro{
+            display: none;
+        }
+    }
+    
+}

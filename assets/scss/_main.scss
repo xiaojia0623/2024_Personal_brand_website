@@ -1,0 +1,133 @@
+@import "../scss/layout/header";
+@import "../scss/layout//footer";
+@import "../scss/layout//aside";
+
+@import "../scss/pages/index";
+@import "../scss/pages/portfolio";
+@import "../scss/pages/service";
+@import "../scss/pages/blog";
+@import "../scss/pages/blog-content";
+
+
+.m64{
+    margin-bottom: 64px;
+}
+
+.p120{
+    padding-top: 120px;
+}
+
+.title-part{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    align-items: center;
+    img{
+        width: 100px;
+        height: 6px;
+    }
+}
+
+.posit-box{
+    top:100px;
+    right:50px;
+}
+
+.box-intro{
+    padding: 40px 20px 28px 20px;
+    width: 420px;
+    height: 300px;
+    border-radius: 24px;
+    gap: 40px;
+    background: #FFFFFF1A;
+    .box-content{
+        border-bottom: 1px solid $primary-7;
+        margin-bottom: 20px;
+    }
+    .box-title{
+        font-family: $NotoSans;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 33.6px;
+        color:$primary-9;
+        margin-bottom: 8px;
+    }
+    p{
+        font-family: $NotoSans;
+        font-weight: 400;
+        line-height: 24px;
+        color:$primary-9;
+        margin-bottom: 24px;
+    }
+    .box-tags{
+        display: flex;
+        list-style: none;
+        justify-content: start;
+        gap: 16px;
+        margin-bottom: 40px;
+        .tag{
+            background: $primary-9;
+            border-radius: 16px;
+            padding: 4px 12px;
+            gap: 10px;
+        }
+    }
+    .box-btn{
+        width: 176px;
+        height: 62px;
+        display: block;
+        text-align: center;
+        background: $primary;
+        padding: 16px 32px;
+        gap: 8px;
+        border-radius: 5px;
+        text-decoration: none;
+        p{
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 30px;
+            img{
+                margin-left: 8px;
+            }
+        }
+    }
+}
+
+.phone-box{
+    padding: 24px 0;
+    .phone-content{
+        text-align: center;
+    }
+    .phone-title{
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    p{
+        margin-bottom: 16px;
+    }
+    .phone-tags{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 8px;
+        .tag{
+            background: $primary-7;
+            border-radius: 16px;
+            padding: 4px 12px;
+            gap: 10px;
+        }
+    }
+    .phone-btn{
+        margin-top: 20px;
+        width: 128px;
+        height: 40px;
+        display: block;
+        text-align: center;
+        background: $primary;
+        gap: 8px;
+        border-radius: 5px;
+        text-decoration: none;
+        padding: 8px 16px;
+    }
+}

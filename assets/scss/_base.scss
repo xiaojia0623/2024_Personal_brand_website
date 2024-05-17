@@ -1,0 +1,19 @@
+//全域設定
+*, *::before, *::after{
+	box-sizing: border-box;
+}
+
+body{
+    line-height: 1.5;
+    font-family: 'Noto Sans TC','Tourney', sans-serif;
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}

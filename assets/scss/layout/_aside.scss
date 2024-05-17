@@ -1,0 +1,44 @@
+.blog-aside{
+    //border: 1px solid green;
+    background: $primary-8;
+    width: 306px;
+    height: auto;
+    list-style: none;
+    padding: 80px;
+    .blog-aside-item{
+        gap: 4px;
+        margin-bottom: 32px;
+        
+    }
+    .aside-item-name{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        display: block;
+        color: $primary-3;
+        
+    }
+}
+
+@include pad{
+    .blog-aside{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+        .blog-aside-item{
+            margin: 0;
+            padding: 20px 12px;
+
+        }
+    }
+}
+
+@include iphone{
+    .blog-aside{
+        position: sticky;
+        top: 0px;
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+}

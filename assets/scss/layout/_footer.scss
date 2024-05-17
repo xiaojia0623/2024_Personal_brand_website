@@ -1,0 +1,91 @@
+.footer{
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  //width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 85px;
+  align-items: center;
+
+  //footer區塊左邊資訊
+  .footer-info{
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    .footer-logo{
+      img{
+        width: 120px;
+      }
+    }
+    .footer-content{
+      font-family: $NotoSans;
+      line-height: 30px;
+      font-weight: 400;
+      font-size: 20px;
+      color: $primary-2;
+    }
+    .footer-address{
+      font-family: $NotoSans;
+      line-height: 24px;
+      font-size: 20px;
+      color:$primary-4;
+      font-weight: 400;
+      text-decoration: none;
+    }
+  }
+
+  //footer區塊右邊按鈕
+  .footer-btns{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    .footer-btn{
+      background: #ffffff;
+      text-decoration: none;
+      border-radius: 8px;
+      padding: 8px 24px;
+      gap: 8px;
+      display: flex;
+      align-items: center;
+      border: 1px solid $primary-5;
+    }
+    .black-btn{
+      background: black;
+    }
+    p{
+      color:$primary-2;
+      margin: 0;
+    }
+  }
+}
+
+@include pad{
+  .footer{
+    padding: 20px 12px;
+    flex-direction: column;
+    .footer-info{
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .footer-btns{
+      width: 100%;
+    }
+  }
+}
+
+@include iphone{
+  .footer{
+    width: 100%;
+    .footer-info{
+      padding: 0;
+      width: 100%;
+    }
+    .footer-btn{
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>作品集</title>
+  </head>
+  <body>
+    <div class="container">
+      <%- include('./layout/header'); -%>
+    
+      <!-- 作品集banner -->
+      <div class="portfolio-banner">
+        <div class="portfolio-banner-statement">
+          <img class="me-lg-auto" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-left.png?raw=true" alt="quote-left">
+          <h2>讓使用者在觀賞與使用的旅程中，<br class="d-lg-none d-block"/>發現<span>設計的價值</span><br />而我在設計與開發的過程中，<br class="d-lg-none d-block"/>看見<span>自己的價值</span></h2>
+          <img class="d-lg-block d-none ms-lg-auto" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-right.png?raw=true" alt="quote-right">
+        </div>
+
+
+        <div class="portfolio-banner-contents d-lg-flex justify-content-center flex-lg-row flex-column">
+          <p><span>2B經驗</span><br/>內部監控系統、庫存系統、採購<br class="d-lg-none d-bloc"/>系統、行<br class="d-lg-block d-none"/>銷整合系統</p>
+          <p><span>2C經驗</span><br/>跨國美妝保養電商、個人品牌網<br class="d-lg-none d-bloc"/>站、醫美<br class="d-lg-block d-none"/>網站、電子商務</p>
+        </div>
+      </div>
+
+      <!-- 作品集卡片 -->
+      <div class="portfolio-cards">
+        <div class="row portfolio-cards-items">
+          <div class="col-sm col-md-12 col-lg-6 cards-item"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <a href="#">
+              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image1.png?raw=true" alt="work-image1">
+              <h3 class="portfolio-cards-title">星際旅行訂票平台</h3>
+              <p class="portfolio-cards-content">悠遊宇宙的夢想，從這裡開始實現</p>
+              <div class="tags ">
+                <a href="#" class="tag">網頁設計</a>
+                <a href="#" class="tag">響應式設計</a>
+                <a href="#" class="tag">Bootstrap</a>
+              </div>
+            </a>
+          </div>
+
+
+          <!-- 上方第一張Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                  <div class="modal-top-header">
+                    <h3 class="modal-content-title">星際旅行訂票平台</h3>
+                    <p>悠遊宇宙的夢想，從這裡開始實現</p>
+                  </div>
+                  <div class="modal-top-banner">
+                    <p class="modal-word">
+                      STAR TRAVEL 為 KK 公司宇宙旅行的購票網站。<br />
+                      主要從地球出發，目的地包含月球、火星、水星、木星；未來太空轉運站建<br/>
+                      置完畢，將再擴增目的地土星和金星。
+                    </p>
+                    <p class="modal-skill">
+                      設計原則：宇宙旅行、深色背景、強烈視覺效果<br/>
+                      開發方式：Bootstrap、Javascript、RWD
+                    </p>
+                  </div>
+
+                  <div class="modalImages">
+                    <div class="modalImagetop">
+                      <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/modal-image1.png?raw=true" alt="modal-image1">
+                      <h4>主視覺</h4>
+                      <p>可直接設定日期、起迄星球、張數，快速查詢可購買的票券。</p>
+                    </div>
+                    <div class="modalImagebottom">
+                      <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/modal-image2.png?raw=true" alt="modal-image2">
+                      <h4>推薦查詢</h4>
+                      <p>給予最快起飛，以及最熱門的景點推薦，協助使用者進行選擇。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-sm col-md-12 col-lg-6 cards-item"  data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            <a href="#">
+              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image2.png?raw=true" alt="work-image1">
+              <h3 class="portfolio-cards-title">理財App</h3>
+              <p class="portfolio-cards-content">連動帳戶與行動支付，讓 AI 提供您最好的理財建議</p>
+              <div class="tags">
+                <a href="#" class="tag">APP設計</a>
+                <a href="#" class="tag">iOS</a>
+                <a href="#" class="tag">React</a>
+              </div>
+            </a>
+          </div>
+
+          <!-- 上方第二張Modal -->
+          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                  <div class="modal-top-header">
+                    <h3 class="modal-content-title">理財App</h3>
+                    <p>連動帳戶與行動支付，讓 AI 提供您最好的理財建議</p>
+                  </div>
+                  <div class="modal-top-banner">
+                    <p class="modal-word">
+                      STAR TRAVEL 為 KK 公司宇宙旅行的購票網站。<br />
+                      主要從地球出發，目的地包含月球、火星、水星、木星；未來太空轉運站建<br/>
+                      置完畢，將再擴增目的地土星和金星。
+                    </p>
+                    <p class="modal-skill">
+                      設計原則：宇宙旅行、深色背景、強烈視覺效果<br/>
+                      開發方式：Bootstrap、Javascript、RWD
+                    </p>
+                  </div>
+
+                  <div class="modalImages">
+                    <div class="modalImagetop">
+                      <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/modal-image1.png?raw=true" alt="modal-image1">
+                      <h4>主視覺</h4>
+                      <p>可直接設定日期、起迄星球、張數，快速查詢可購買的票券。</p>
+                    </div>
+                    <div class="modalImagebottom">
+                      <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/modal-image2.png?raw=true" alt="modal-image2">
+                      <h4>推薦查詢</h4>
+                      <p>給予最快起飛，以及最熱門的景點推薦，協助使用者進行選擇。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm col-md-12 col-lg-6 cards-item" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+            <a href="#">
+              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image3.png?raw=true" alt="work-image1">
+              <h3 class="portfolio-cards-title">醫美診所官網</h3>
+              <p class="portfolio-cards-content">永保青春的秘密，從粹究開始</p>
+              <div class="tags">
+                <a href="#" class="tag">網頁設計</a>
+                <a href="#" class="tag">響應式設計</a>
+                <a href="#" class="tag">ＷordPress</a>
+              </div>
+            </a>
+          </div>
+
+          <!-- 上方第三張Modal -->
+          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                  <div class="modal-top-header">
+                    <h3 class="modal-content-title">醫美診所官網</h3>
+                    <p>永保青春的秘密，從粹究開始</p>
+                  </div>
+                  <div class="modal-top-banner">
+                    <p class="modal-word">
+                      STAR TRAVEL 為 KK 公司宇宙旅行的購票網站。<br />
+                      主要從地球出發，目的地包含月球、火星、水星、木星；未來太空轉運站建<br/>
+                      置完畢，將再擴增目的地土星和金星。
+                    </p>
+                    <p class="modal-skill">
+                      設計原則：宇宙旅行、深色背景、強烈視覺效果<br/>
+                      開發方式：Bootstrap、Javascript、RWD
+                    </p>
+                  </div>
+
+                  <div class="modalImages">
+                    <div class="modalImagetop">
+                      <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/modal-image1.png?raw=true" alt="modal-image1">
+                      <h4>主視覺</h4>
+                      <p>可直接設定日期、起迄星球、張數，快速查詢可購買的票券。</p>
+                    </div>
+                    <div class="modalImagebottom">
+                      <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/modal-image2.png?raw=true" alt="modal-image2">
+                      <h4>推薦查詢</h4>
+                      <p>給予最快起飛，以及最熱門的景點推薦，協助使用者進行選擇。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm col-md-12 col-lg-6 cards-item" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+            <a href="#">
+              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image4.png?raw=true" alt="work-image1">
+              <h3 class="portfolio-cards-title">美美美早餐店 POS 機 UI Design</h3>
+              <p class="portfolio-cards-content">訂單送單一目瞭然，自動報表分析好輕鬆</p>
+              <div class="tags">
+                <a href="#" class="tag">UI 設計</a>
+                <a href="#" class="tag">前端開發</a>
+                <a href="#" class="tag">Wix</a>
+              </div>
+            </a>
+          </div>
+
+          <!-- 上方第四張Modal -->
+          <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                  <div class="modal-top-header">
+                    <h3 class="modal-content-title">美美美早餐店 POS 機 UI Design</h3>
+                    <p>訂單送單一目瞭然，自動報表分析好輕鬆</p>
+                  </div>
+                  <div class="modal-top-banner">
+                    <p class="modal-word">
+                      STAR TRAVEL 為 KK 公司宇宙旅行的購票網站。<br />
+                      主要從地球出發，目的地包含月球、火星、水星、木星；未來太空轉運站建<br/>
+                      置完畢，將再擴增目的地土星和金星。
+                    </p>
+                    <p class="modal-skill">
+                      設計原則：宇宙旅行、深色背景、強烈視覺效果<br/>
+                      開發方式：Bootstrap、Javascript、RWD
+                    </p>
+                  </div>
+
+                  <div class="modalImages">
+                    <div class="modalImagetop">
+                      <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/modal-image1.png?raw=true" alt="modal-image1">
+                      <h4>主視覺</h4>
+                      <p>可直接設定日期、起迄星球、張數，快速查詢可購買的票券。</p>
+                    </div>
+                    <div class="modalImagebottom">
+                      <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/modal-image2.png?raw=true" alt="modal-image2">
+                      <h4>推薦查詢</h4>
+                      <p>給予最快起飛，以及最熱門的景點推薦，協助使用者進行選擇。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm col-md-12 col-lg-6 cards-item" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+            <a href="#">
+              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image5.png?raw=true" alt="work-image1">
+              <h3 class="portfolio-cards-title">電影院訂票系統</h3>
+              <p class="portfolio-cards-content">三步驟完成訂票，電腦手機都支援</p>
+              <div class="tags">
+                <a href="#" class="tag">前端開發</a>
+                <a href="#" class="tag">後端支援</a>
+                <a href="#" class="tag">Vue</a>
+              </div>
+            </a>
+          </div>
+
+          <!-- 上方第五張Modal -->
+          <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                  <div class="modal-top-header">
+                    <h3 class="modal-content-title">電影院訂票系統</h3>
+                    <p>三步驟完成訂票，電腦手機都支援</p>
+                  </div>
+                  <div class="modal-top-banner">
+                    <p class="modal-word">
+                      STAR TRAVEL 為 KK 公司宇宙旅行的購票網站。<br />
+                      主要從地球出發，目的地包含月球、火星、水星、木星；未來太空轉運站建<br/>
+                      置完畢，將再擴增目的地土星和金星。
+                    </p>
+                    <p class="modal-skill">
+                      設計原則：宇宙旅行、深色背景、強烈視覺效果<br/>
+                      開發方式：Bootstrap、Javascript、RWD
+                    </p>
+                  </div>
+
+                  <div class="modalImages">
+                    <div class="modalImagetop">
+                      <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/modal-image1.png?raw=true" alt="modal-image1">
+                      <h4>主視覺</h4>
+                      <p>可直接設定日期、起迄星球、張數，快速查詢可購買的票券。</p>
+                    </div>
+                    <div class="modalImagebottom">
+                      <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/modal-image2.png?raw=true" alt="modal-image2">
+                      <h4>推薦查詢</h4>
+                      <p>給予最快起飛，以及最熱門的景點推薦，協助使用者進行選擇。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm col-md-12 col-lg-6 cards-item" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+            <a href="#">
+              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image6.png?raw=true" alt="work-image1">
+              <h3 class="portfolio-cards-title">巧克巧克形象官網設計</h3>
+              <p class="portfolio-cards-content">三步驟完成訂票，電腦手機都支援</p>
+              <div class="tags">
+                <a href="#" class="tag">UI設計</a>
+                <a href="#" class="tag">設計系統</a>
+                <a href="#" class="tag">網路電商</a>
+              </div>
+            </a>
+          </div>
+
+          <!-- 上方第六張Modal -->
+          <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                  <div class="modal-top-header">
+                    <h3 class="modal-content-title">巧克巧克形象官網設計</h3>
+                    <p>三步驟完成訂票，電腦手機都支援</p>
+                  </div>
+                  <div class="modal-top-banner">
+                    <p class="modal-word">
+                      STAR TRAVEL 為 KK 公司宇宙旅行的購票網站。<br />
+                      主要從地球出發，目的地包含月球、火星、水星、木星；未來太空轉運站建<br/>
+                      置完畢，將再擴增目的地土星和金星。
+                    </p>
+                    <p class="modal-skill">
+                      設計原則：宇宙旅行、深色背景、強烈視覺效果<br/>
+                      開發方式：Bootstrap、Javascript、RWD
+                    </p>
+                  </div>
+
+                  <div class="modalImages">
+                    <div class="modalImagetop">
+                      <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/modal-image1.png?raw=true" alt="modal-image1">
+                      <h4>主視覺</h4>
+                      <p>可直接設定日期、起迄星球、張數，快速查詢可購買的票券。</p>
+                    </div>
+                    <div class="modalImagebottom">
+                      <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/modal-image2.png?raw=true" alt="modal-image2">
+                      <h4>推薦查詢</h4>
+                      <p>給予最快起飛，以及最熱門的景點推薦，協助使用者進行選擇。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item "><a class="page-link border-0 activebtn" href="#">1</a></li>
+            <li class="page-item "><a class="page-link border-0" href="#">2</a></li>
+            <li class="page-item "><a class="page-link border-0" href="#">3</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
