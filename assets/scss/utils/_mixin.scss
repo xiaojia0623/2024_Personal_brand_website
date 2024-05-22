@@ -1,3 +1,9 @@
+@mixin pad-exlg{  //1400以下設定為平板
+    @media(max-width:1200px) {
+        @content;
+    }
+}
+
 @mixin pad-lg{  //1200以下設定為平板
     @media(max-width:1200px) {
         @content;

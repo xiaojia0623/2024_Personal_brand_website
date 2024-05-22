@@ -169,7 +169,7 @@
 
 //首頁精選文章區塊
 .article{
-    padding: 120px 0;
+    padding: 120px 12px;
     .title-par{
         margin: 60px auto 80px auto;
         display: flex;
@@ -181,7 +181,7 @@
         }
     }
     .swiper{  //首頁精選文章 輪播區塊
-        width: 1200px;
+        max-width: 1200px;
         .swiper-slide{
             max-width: 416px;
             display: flex;
@@ -268,15 +268,8 @@
     }
 }
 
-@include pad-lg{
-    .article{
-        .swiper{
-            width: 100%;
-            padding: 0 12px;
-        }
-        
-    }
-}
+
+
 
 @include pad{
     //平板 首頁banner區塊
