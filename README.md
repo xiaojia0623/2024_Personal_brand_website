@@ -3,9 +3,12 @@
 
 ## 開發環境設置
   - Node.js 版本需為 v16 以上
-  - Bootstrap 5.3.3
-  - Vite 4.2.0
-  - Sass 1.61.0
+  - Bootstrap v5.3.3
+  - Vite v4.2.0
+  - Sass v1.61.0
+  - aos v3.0.0
+  - swiper v11.1.3
+  - jQuery v3.7.1
 
 ## 指令列表
 - `npm install` - 初次下載該範例專案後，需要使用 npm install 來安裝套件
