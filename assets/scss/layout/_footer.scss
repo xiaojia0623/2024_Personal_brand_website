@@ -51,6 +51,9 @@
       display: flex;
       align-items: center;
       border: 1px solid $primary-5;
+      &:hover{
+        background: black;
+      }
     }
     .black-btn{
       background: black;
@@ -58,6 +61,9 @@
     p{
       color:$primary-2;
       margin: 0;
+      &:hover{
+        color:#ffffff;
+      }
     }
   }
 }

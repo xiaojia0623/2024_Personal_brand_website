@@ -30,7 +30,6 @@
 
 //作品集卡片
 .portfolio-cards{
-    width: 1296px;
     margin: 0 auto;
     padding: 120px 0;
     .pagination{
@@ -212,12 +211,18 @@
     }
     .portfolio-cards{
         padding: 80px 12px;
+        .row{
+            padding: 0;
+        }
         .portfolio-cards-items{
             img{
                 width: 100%;
                 height: 224px;
                 object-fit: cover;
             }
+        }
+        .cards-item{
+            width: 100%;
         }
     }
     .modal{

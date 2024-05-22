@@ -1,0 +1,72 @@
+
+.about-banner{
+    background-image: url("https://images.pexels.com/photos/26681/pexels-photo-26681.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+    text-align: center;
+    p{
+        font-size: 20px;
+    }
+}
+
+.about-content{
+    background-image: url("https://images.pexels.com/photos/1078981/pexels-photo-1078981.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover;
+    height: auto;
+    padding: 120px 0;
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .content-img{
+        img{
+            width:600px;
+            border-radius: 10px;
+            box-shadow:0 0 15px 0 rgba(0,0,0,.6),inset 0 0 15px 0 rgba(0,0,0,.5);
+        }
+    }
+    .content-detail{
+        background: rgba(113, 113, 113, 0.6);
+        border-radius: 10px;
+        padding: 10px;
+        width:50%;
+        h2{
+            font-family: $DancingScript;
+            letter-spacing:.3rem;
+            font-weight:700;
+            color: $primary;
+        }
+        p{
+            text-indent: 2rem;
+            line-height: 24px;
+            font-family: $NotoSans;
+            color: $primary-7;
+        }
+    }
+}
+
+
+
+@include pad{  //992以下設定為平板
+    .container{
+        .content-detail{
+            margin-top: 30px;
+            width: 100%;
+        }
+    }
+}
+@include iphone{  //767以下設定為手機
+    .about-content{
+        padding: 30px 0;
+    }
+}
+
+@include iphone-sm{  //576以下設定為手機
+    
+}

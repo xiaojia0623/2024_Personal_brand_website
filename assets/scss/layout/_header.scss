@@ -1,8 +1,7 @@
 .navbar{
-  .container{
-    width: 1296px;
-    margin: 0 auto;
-  }
+  width: 100%;
+  border-bottom: 1px solid #F1F1F1;
+  padding: 32px 0;
   h1{
     margin: 0;
   }
@@ -11,14 +10,71 @@
       gap: 40px;
       margin: 0 auto;
     .page{
-      gap: 10px;
       padding: 4px 8px;
     }
     .nav-item{
       padding: 4px 8px;
     }
+    .nav-link{
+      position: relative;
+      padding: 5px;
+      &:hover {
+        &::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          border: 1px solid #919191;
+          mask: conic-gradient(at 8px 8px, rgba(0, 0, 0, 0) 75%, #000 0) 0 0 / calc(100% - 8px) calc(100% - 8px), linear-gradient(#000 0 0) content-box;
+        }
+      }
+    }
   }
 }
+.active{
+  position:relative;
+  margin:0 auto;
+  
+}
+
+.line-top-left,
+.line-top-right,
+.line-bottom-left,
+.line-bottom-right {
+   display: none; /* 默认隐藏 */
+   position: absolute;
+   width: 10px;
+   height: 10px;
+}
+
+.line-top-left{
+  top:-5px; left:0px;
+  border-top:2px solid #919191;
+  border-left:2px solid #919191;
+}
+.line-top-right{
+  top:-5px; right:0px;
+  border-top:2px solid #919191;
+  border-right:2px solid #919191;
+}
+.line-bottom-left{
+  bottom:-5px; left:0px;
+  border-bottom:2px solid #919191;
+  border-left:2px solid #919191;
+}
+.line-bottom-right{
+  bottom:-5px; right:0px;
+  border-bottom:2px solid #919191;
+  border-right:2px solid #919191;
+}
+
+.active .line-top-left,
+.active .line-top-right,
+.active .line-bottom-left,
+.active .line-bottom-right {
+   display: block; /* .active 显示 */
+  
+}
+
 
 @include pad{  //992px
   .navbar{
@@ -29,11 +85,30 @@
     .offcanvas{
       height: 320px;
     }
+    .nav-link{
+      display:block;
+      padding: auto 20px;
+    }
+    .offcanvas {
+      max-height: 55%;
+    }
+    .offcanvas-header{
+      border-bottom: 1px solid $primary-7;
+    }
   }
+  
 }
 
-@include iphone{ //576px
+@include iphone{ //768px
   .navbar{
-    padding: 8px auto;
+    padding: 8px 12px;
+  }
+  .nav-item{
+    margin-bottom: 10px;
+    padding:0  10px;
+  }
+  .offcanvas-body{
+    padding: 0;
+    overflow-y: hidden;
   }
 }

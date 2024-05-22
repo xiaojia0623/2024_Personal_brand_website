@@ -4,10 +4,11 @@
 
 //首頁banner區塊
 .banner{
+    width: 100%;
     padding: 0;
     margin: 0;
     .banner-content{
-        padding-left: 60px;
+        padding-left:115px;
     }
     .banner-image{
         .banner-web-img{
@@ -19,7 +20,15 @@
             display: none;
         }
     }
-    
+    .banner-icons{
+        .icon{
+            &:hover{
+                background: #FFDEAD;
+                border-radius: 10px;
+
+            }
+        }
+    }
 }
 
 //首頁作品介紹區塊
@@ -83,12 +92,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 500px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 120px 0 120px 0;
+    padding: 120px 0;
     .title-par{
         margin-bottom: 40px;
         display: flex;
@@ -121,6 +129,9 @@
                 text-align: center;
                 margin: 0;
                 font-size: 28px;
+                &:hover{
+                    color:#3CB371;
+                }
             }
             img{
                 display: block;
@@ -142,7 +153,10 @@
         padding: 16px 32px;
         background-color: $primary;
         border-radius: 5px;
-        margin-bottom: 80px;
+        //margin-bottom: 80px;
+        &:hover{
+            background: #4169E1;
+        }
         p{
             color: $primary-9;
             margin: 0;
@@ -155,6 +169,7 @@
 
 //首頁精選文章區塊
 .article{
+    padding: 120px 0;
     .title-par{
         margin: 60px auto 80px auto;
         display: flex;
@@ -167,9 +182,6 @@
     }
     .swiper{  //首頁精選文章 輪播區塊
         width: 1200px;
-        .swiper-wrapper{
-            margin-bottom: 40px;
-        }
         .swiper-slide{
             max-width: 416px;
             display: flex;
@@ -186,6 +198,9 @@
                 font-weight: 700;
                 font-size: 20px;
                 line-height: 24px;
+                color: $primary-2;
+                margin-top: 16px;
+                margin-bottom: 16px;
             }
             .tags{
                 display: flex;
@@ -195,8 +210,17 @@
                     padding: 4px 12px;
                     gap: 10px;
                     background: $primary-7;
+                    color: $primary-2;
+                }
+                span{
+                    color: $primary-3;
                 }
             }
+        }
+        .swiper-pagination{
+            position: static;
+            padding: 0;
+            margin-top: 40px;
         }
     }
 
@@ -217,11 +241,9 @@
             gap: 10px;
             background: $primary-7;
             color: $primary-2;
-            font-weight:400;
             line-height: 24px;
         }
         span{
-            font-weight:400;
             line-height: 24px;
             color: $primary-3;
         }
@@ -246,6 +268,15 @@
     }
 }
 
+@include pad-lg{
+    .article{
+        .swiper{
+            max-width: 100%;
+            padding: 0 12px;
+        }
+        
+    }
+}
 
 @include pad{
     //平板 首頁banner區塊
@@ -290,7 +321,7 @@
     }
     .service{
         height: auto;
-        padding:40px 12px 0 12px;
+        padding:40px 12px;
        
         .service-menu{
             display: flex;
@@ -308,8 +339,9 @@
         .title-par{
             padding: 0;
         }
-        .swiper{
-            width: 700px;
+        .swiper-title{
+            margin-top: 16px;
+            margin-bottom: 16px;
         }
     }
     .phone-sw{
@@ -390,10 +422,12 @@
             padding: 0;
             margin: 0 0 40px 0;
         }
-
     }
     .phone-sw{
         width: 100%;
+        .phone-sw-item{
+            margin-bottom: 48px;
+        }
     }
     
     

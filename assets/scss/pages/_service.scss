@@ -22,6 +22,9 @@
         p{
             color:$primary-9;
             text-align: center;
+            &:hover{
+                color:#3CB371;
+            }
         }
     }
 }
@@ -160,6 +163,9 @@
                 color: $primary-2;
                 padding: 4px 12px;
                 background: $primary-7;
+                &:hover{
+                    background:#AFEEEE ;
+                }
             }
         }
     }
