@@ -3,8 +3,24 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 // @import "../node_modules/bootstrap/scss/functions";
 
-@import "./variables";   //變數設定
-@import "./normalize";  //不太會去更動
-@import "./base";       //客製化全站設定
-@import "./mixin";      //mixin 
-@import "./main";       //主要css
+@import "./utils/variables";   //變數設定
+@import "./base/normalize";  //不太會去更動
+@import "./base/base";       //客製化全站設定
+@import "./utils/mixin";      //mixin 
+@import "./components/button";
+@import "./components/Headline";
+
+
+//layout 的scss
+@import "../scss/layout/header";
+@import "../scss/layout//footer";
+@import "../scss/layout//aside";
+
+
+//page 的scss
+@import "../scss/pages/index";
+@import "../scss/pages/portfolio";
+@import "../scss/pages/service";
+@import "../scss/pages/blog";
+@import "../scss/pages/blog-content";
+@import "../scss/pages/about";
